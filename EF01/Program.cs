@@ -1,10 +1,13 @@
-﻿namespace EF01
+﻿using EF01.Data;
+
+namespace EF01
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using (ApplicationDBContext context = new ApplicationDBContext());
+
         }
     }
 }
